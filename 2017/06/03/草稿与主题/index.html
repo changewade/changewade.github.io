@@ -23,7 +23,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/03/草稿与主题/index.html">
 <meta property="og:site_name" content="chAnge">
 <meta property="og:description" content="草稿可以通过以下命令来新建草稿，草稿内容将被保存在source/_drafts 文件夹。 1hexo new draft &amp;quot;title&amp;quot;">
-<meta property="og:updated_time" content="2017-06-04T04:52:57.000Z">
+<meta property="og:updated_time" content="2017-06-04T08:19:13.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="草稿与主题 | chAnge">
 <meta name="twitter:description" content="草稿可以通过以下命令来新建草稿，草稿内容将被保存在source/_drafts 文件夹。 1hexo new draft &amp;quot;title&amp;quot;">
@@ -178,20 +178,51 @@ classes that you can use:
 <a id="more"></a>
 <p>可以通过 publish 命令将草稿移动到 source/_posts 文件夹。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo publish [layout] &lt;title&gt;</div></pre></td></tr></table></figure>
-<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>本网站目前采用hexo-next主题。<br>部署详情请见：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">http://theme-next.iissnan.com/getting-started.html</a></p>
-<h3 id="Cannot-Get-tags"><a href="#Cannot-Get-tags" class="headerlink" title="Cannot Get /tags/"></a>Cannot Get /tags/</h3><p>本主题下直接安装后，tags标签打开显示Cannot Get ／tags/<br>解决方法如下：</p>
-<h4 id="步骤一"><a href="#步骤一" class="headerlink" title="步骤一"></a>步骤一</h4><p>新建一个页面（page），命名为tags。命令如下：</p>
+<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><h3 id="hexo-next主题。"><a href="#hexo-next主题。" class="headerlink" title="hexo-next主题。"></a>hexo-next主题。</h3><p>部署详情请见：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">http://theme-next.iissnan.com/getting-started.html</a></p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>首先通过cd 指令进入themes目录下。然后通过以下命令下载主题<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/letiantian/huno.git</div></pre></td></tr></table></figure><br>修改Hexo的配置文件_config.xml：</p>
+<blockquote>
+<p>theme: next</p>
+</blockquote>
+<h4 id="选择scheme"><a href="#选择scheme" class="headerlink" title="选择scheme"></a>选择scheme</h4><p>Scheme 是 NexT 提供的一种特性，借助于 Scheme，NexT 为你提供多种不同的外观。同时，几乎所有的配置都可以 在 Scheme 之间共用。目前 NexT 支持三种 Scheme:</p>
+<ul>
+<li>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</li>
+<li>Mist - Muse 的紧凑版本，整洁有序的单栏外观</li>
+<li>Pisces - 双栏 Scheme，整体风格清新</li>
+</ul>
+<p>Scheme 的切换通过更改 主题配置文件，搜索 scheme 关键字。 你会看到有三行 scheme 的配置，将你需用启用的 scheme 前面注释 # 去除即可。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#scheme: Muse</div><div class="line">scheme: Mist</div><div class="line">#scheme: Pisces</div></pre></td></tr></table></figure></p>
+<h4 id="设置语言"><a href="#设置语言" class="headerlink" title="设置语言"></a>设置语言</h4><p>编辑 站点配置文件， 将 language 设置成你所需要的语言。建议明确设置你所需要的语言，例如选用简体中文，配置如下：</p>
+<blockquote>
+<p>language: zh-Hans</p>
+</blockquote>
+<h4 id="Cannot-Get-tags"><a href="#Cannot-Get-tags" class="headerlink" title="Cannot Get /tags/"></a>Cannot Get /tags/</h4><p>本主题下直接安装后，tags标签打开显示Cannot Get ／tags/<br>解决方法如下：</p>
+<h5 id="步骤一"><a href="#步骤一" class="headerlink" title="步骤一"></a>步骤一</h5><p>新建一个页面（page），命名为tags。命令如下：</p>
 <blockquote>
 <p>$ hexo new page “tags”</p>
 </blockquote>
-<h4 id="步骤二"><a href="#步骤二" class="headerlink" title="步骤二"></a>步骤二</h4><p>打开新建文件夹 /source/tags/index.md，编辑内容如下：</p>
+<h5 id="步骤二"><a href="#步骤二" class="headerlink" title="步骤二"></a>步骤二</h5><p>打开新建文件夹 /source/tags/index.md，编辑内容如下：</p>
 <blockquote>
 <p>---<br>title: Tagcloud<br>date: 2017-06-04 12:15:00<br>type: “tags”<br>---</p>
 </blockquote>
-<h4 id="步骤三"><a href="#步骤三" class="headerlink" title="步骤三"></a>步骤三</h4><p>若你是按照上述方法安装next，无需步骤三。否则：<br>在菜单中添加链接。编辑 主题配置文件 ，添加 tags 到 menu 中，如下:(注意冒号后有空格)</p>
+<h5 id="步骤三"><a href="#步骤三" class="headerlink" title="步骤三"></a>步骤三</h5><p>若你是按照上述方法安装next，无需步骤三。否则：<br>在菜单中添加链接。编辑 主题配置文件 ，添加 tags 到 menu 中，如下:(注意冒号后有空格)</p>
 <blockquote>
 <p>menu:<br>home: /<br>archives: /archives<br>tags: /tags</p>
 </blockquote>
+<h3 id="huno主题"><a href="#huno主题" class="headerlink" title="huno主题"></a>huno主题</h3><p>部署详情请见：<a href="https://yuxiang.ren/2016/12/02/install-huno-theme/" target="_blank" rel="external">https://yuxiang.ren/2016/12/02/install-huno-theme/</a></p>
+<h4 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h4><p>首先通过cd 指令进入themes目录下。然后通过以下命令下载主题<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone git://github.com/someus/huno.git themes/huno</div></pre></td></tr></table></figure><br>修改Hexo的配置文件_config.xml：</p>
+<blockquote>
+<p>theme: huno</p>
+</blockquote>
+<h4 id="设置语言-1"><a href="#设置语言-1" class="headerlink" title="设置语言"></a>设置语言</h4><p>编辑 站点配置文件， 将 language 设置成你所需要的语言。建议明确设置你所需要的语言，例如选用简体中文，配置如下：</p>
+<blockquote>
+<p>language: zh-CN</p>
+</blockquote>
+<h4 id="归档页面"><a href="#归档页面" class="headerlink" title="归档页面"></a>归档页面</h4><p>归档页面会显示分类、标签云以及基于日期的归档。</p>
+<p>在主题的配置文件_config.yml中可修改菜单如下：）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># Header</div><div class="line">menu:</div><div class="line">首页: /#blog</div><div class="line">归档: /archive</div><div class="line">关于: /about</div></pre></td></tr></table></figure></p>
+<p>创建新的page：</p>
+<blockquote>
+<p>$ hexo new page archive</p>
+</blockquote>
+<p>进入／source/archive，编辑index.md文件，修改内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">\-\-\-</div><div class="line">title: 分类</div><div class="line">layout: page-archive</div><div class="line">\-\-\-</div></pre></td></tr></table></figure><br>即可。</p>
 
   </section>
 
