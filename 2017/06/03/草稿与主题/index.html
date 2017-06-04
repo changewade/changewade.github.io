@@ -100,7 +100,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/03/草稿与主题/index.html">
 <meta property="og:site_name" content="chAnge">
 <meta property="og:description" content="草稿可以通过以下命令来新建草稿，草稿内容将被保存在source/_drafts 文件夹。 1hexo new draft &amp;quot;title&amp;quot;">
-<meta property="og:updated_time" content="2017-06-04T04:48:18.000Z">
+<meta property="og:updated_time" content="2017-06-04T04:52:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="草稿与主题">
 <meta name="twitter:description" content="草稿可以通过以下命令来新建草稿，草稿内容将被保存在source/_drafts 文件夹。 1hexo new draft &amp;quot;title&amp;quot;">
@@ -327,16 +327,16 @@
 <p>可以通过 publish 命令将草稿移动到 source/_posts 文件夹。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo publish [layout] &lt;title&gt;</div></pre></td></tr></table></figure>
 <h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>本网站目前采用hexo-next主题。<br>部署详情请见：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">http://theme-next.iissnan.com/getting-started.html</a></p>
-<p>###Cannot Get /tags/<br>本主题下直接安装后，tags标签打开显示Cannot Get ／tags/<br>解决方法如下：</p>
-<p>####步骤一<br>新建一个页面（page），命名为tags。命令如下：</p>
+<h3 id="Cannot-Get-tags"><a href="#Cannot-Get-tags" class="headerlink" title="Cannot Get /tags/"></a>Cannot Get /tags/</h3><p>本主题下直接安装后，tags标签打开显示Cannot Get ／tags/<br>解决方法如下：</p>
+<h4 id="步骤一"><a href="#步骤一" class="headerlink" title="步骤一"></a>步骤一</h4><p>新建一个页面（page），命名为tags。命令如下：</p>
 <blockquote>
 <p>$ hexo new page “tags”</p>
 </blockquote>
-<p>####步骤二<br>打开新建文件夹 /source/tags/index.md，编辑内容如下：</p>
+<h4 id="步骤二"><a href="#步骤二" class="headerlink" title="步骤二"></a>步骤二</h4><p>打开新建文件夹 /source/tags/index.md，编辑内容如下：</p>
 <blockquote>
 <p>---<br>title: Tagcloud<br>date: 2017-06-04 12:15:00<br>type: “tags”<br>---</p>
 </blockquote>
-<p>####步骤三<br>若你是按照上述方法安装next，无需步骤三。否则：<br>在菜单中添加链接。编辑 主题配置文件 ，添加 tags 到 menu 中，如下:(注意冒号后有空格)</p>
+<h4 id="步骤三"><a href="#步骤三" class="headerlink" title="步骤三"></a>步骤三</h4><p>若你是按照上述方法安装next，无需步骤三。否则：<br>在菜单中添加链接。编辑 主题配置文件 ，添加 tags 到 menu 中，如下:(注意冒号后有空格)</p>
 <blockquote>
 <p>menu:<br>home: /<br>archives: /archives<br>tags: /tags</p>
 </blockquote>
@@ -392,8 +392,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/06/03/书影短评/" rel="prev" title="书影短评">
-                书影短评 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/06/03/书单与影单/" rel="prev" title="书单与影单">
+                书单与影单 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -514,7 +514,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#草稿"><span class="nav-number">1.</span> <span class="nav-text">草稿</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题"><span class="nav-number">2.</span> <span class="nav-text">主题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#草稿"><span class="nav-number">1.</span> <span class="nav-text">草稿</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题"><span class="nav-number">2.</span> <span class="nav-text">主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Cannot-Get-tags"><span class="nav-number">2.1.</span> <span class="nav-text">Cannot Get /tags/</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#步骤一"><span class="nav-number">2.1.1.</span> <span class="nav-text">步骤一</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#步骤二"><span class="nav-number">2.1.2.</span> <span class="nav-text">步骤二</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#步骤三"><span class="nav-number">2.1.3.</span> <span class="nav-text">步骤三</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
